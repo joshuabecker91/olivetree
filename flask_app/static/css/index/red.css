@@ -1,0 +1,72 @@
+/* d32f2f (Accent)
+============================================================================= */
+.accent-color,
+.accent-color-hover:hover,
+a:hover,
+.btn-accent.btn-outline,
+.btn-accent.btn-outline-reverse:hover,
+.tabs-block .nav-tabs .nav-link.active,
+.read-more-link:not(.btn),
+.read-more-link:not(.btn):hover,
+.accordion-button:hover,
+.accordion-button[aria-expanded="true"],
+.shop-block .shop-block-heading .product-price {
+    color: #d32f2f;
+}
+
+.accent-color-bg,
+.btn-accent,
+.btn-accent.btn-outline:hover,
+.widget_calendar table tbody a:not(.btn),
+.widget_calendar table tbody a:not(.btn):hover,
+.alert-accent,
+.mejs__audio .mejs__controls,
+.social-networks ul li:hover a i,
+.social-networks.social-networks-layout-transparent ul li:hover a i,
+.social-networks.social-networks-layout-2 ul li a:first-child *,
+.price-slider .ui-slider-range,
+.price-slider .ui-slider-handle,
+.pagination-block .page-item.active .page-link,
+.pagination-block .page-item.active .page-link:hover,
+.form-block-sign .form-block-sign-logo,
+.nav-menu-block-layout-2 ul li a:hover,
+.nav-menu-block-layout-2 ul li.active a,
+input[type="checkbox"].form-control:checked {
+    background-color: #d32f2f;
+}
+
+.accent-color-border,
+.btn-accent,
+.btn-accent.btn-outline:hover,
+.form-control:focus,
+input[type="radio"].form-control:checked,
+input[type="checkbox"].form-control:checked,
+input[type="checkbox"].form-control:checked:focus,
+.alert-accent,
+.tabs-block .nav-tabs .nav-link.active,
+.tabs-block-vertical .nav-tabs .nav-link.active::before,
+.timeline-block-body {
+    border-color: #d32f2f;
+}
+
+a,
+a:hover {
+    text-decoration-color: #d32f2f;
+}
+
+
+/* b52626 (Accent alt)
+============================================================================= */
+.accent-alt-color {
+    color: #b52626;
+}
+
+.accent-alt-color-bg,
+.btn-accent:not(.btn-outline):not(.btn-outline-reverse):hover {
+    background-color: #b52626;
+}
+
+.accent-alt-color-border,
+.btn-accent:not(.btn-outline):not(.btn-outline-reverse):hover {
+    border-color: #b52626;
+}

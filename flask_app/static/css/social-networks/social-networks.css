@@ -1,0 +1,614 @@
+/*
+    Author: Graphicfort
+    Author URL: http://graphicfort.com
+    Social Media v1.0.0
+*/
+
+
+
+
+/* =============================================================================
+   Social networks
+============================================================================= */
+/* Main
+============================================================================= */
+/* Wrapper
+----------------------------------------------------------------------------- */
+.social-networks {
+    padding: 0;
+    z-index: 10;
+    width: 100%;
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    overflow: hidden;
+    margin: 0 0 36px;
+    position: relative;
+}
+
+/* List (ul)
+----------------------------------------------------------------------------- */
+.social-networks ul {
+    padding: 0;
+    width: auto;
+    margin: -6px;
+    list-style: none;
+    display: inline-block;
+}
+
+/* items (li)
+----------------------------------------------------------------------------- */
+.social-networks ul li,
+.social-networks ul li:last-child {
+    padding: 0;
+    margin: 6px;
+    border-radius: 50%;
+    line-height: inherit;
+    display: inline-block;
+}
+
+/* Link
+----------------------------------------------------------------------------- */
+.social-networks ul li a {
+    width: 42px;
+    height: 42px;
+    font-size: 13px;
+    overflow: hidden;
+    line-height: 42px;
+    text-align: center;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none !important;
+}
+
+/* icon
+----------------------------------------------------------------------------- */
+.social-networks ul li a i {
+    width: 100%;
+    display: block;
+    color: #636363;
+    line-height: 42px;
+    background-color: #f6f6f6;
+
+    -webkit-transition: all 0.30s ease-in-out;
+            transition: all 0.30s ease-in-out;
+}
+
+.light-color .social-networks ul li a i,
+.color-light .social-networks ul li a i,
+.widget-light-color .social-networks ul li a i,
+.widget-color-light .social-networks ul li a i {
+    color: inherit;
+}
+
+/* Transparent icons
+----------------------------------------------------------------------------- */
+.social-networks.social-networks-layout-transparent ul li a i {
+    background-color: transparent;
+}
+.social-networks.social-networks-layout-transparent-light ul li a i {
+    color: #ffffff;
+}
+
+/* Shapes
+----------------------------------------------------------------------------- */
+/* Square */
+.social-networks.social-networks-square ul li,
+.social-networks.social-networks-square ul li a {
+    border-radius: 0;
+}
+
+/* Square with small curve */
+.social-networks.social-networks-square-2px ul li,
+.social-networks.social-networks-square-2px ul li a {
+    border-radius: 2px;
+}
+
+/* Size
+----------------------------------------------------------------------------- */
+/* xs */
+.social-networks.social-networks-xs ul li a {
+    width: 30px;
+    height: 30px;
+    font-size: 11px;
+    line-height: 30px;
+}
+.social-networks.social-networks-xs ul li a i {
+    line-height: 30px;
+}
+
+/* sm */
+.social-networks.social-networks-sm ul li a {
+    width: 36px;
+    height: 36px;
+    font-size: 11px;
+    line-height: 36px;
+}
+.social-networks.social-networks-sm ul li a i {
+    line-height: 36px;
+}
+
+/* lg */
+.social-networks.social-networks-lg ul li a {
+    width: 48px;
+    height: 48px;
+    font-size: 16px;
+    line-height: 48px;
+}
+.social-networks.social-networks-lg ul li a i {
+    line-height: 48px;
+}
+
+/* xl */
+.social-networks.social-networks-xl ul li a {
+    width: 54px;
+    height: 54px;
+    font-size: 16px;
+    line-height: 54px;
+}
+.social-networks.social-networks-xl ul li a i {
+    line-height: 54px;
+}
+
+/* Name
+----------------------------------------------------------------------------- */
+.social-networks.social-networks-with-name ul li a {
+    width: auto;
+    overflow: hidden;
+    position: relative;
+
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+}
+
+.social-networks.social-networks-with-name ul li a i { padding: 0 21px; }
+.social-networks.social-networks-with-name.social-networks-xs ul li a i { padding: 0 9px; }
+.social-networks.social-networks-with-name.social-networks-sm ul li a i { padding: 0 15px; }
+.social-networks.social-networks-with-name.social-networks-lg ul li a i { padding: 0 27px; }
+.social-networks.social-networks-with-name.social-networks-xl ul li a i { padding: 0 33px; }
+
+.social-networks.social-networks-with-name ul li a i::before,
+.social-networks.social-networks-with-name ul li a i span {
+    padding: 0 3px;
+    vertical-align: top;
+    display: inline-block;
+}
+.social-networks.social-networks-with-name ul li a i span {
+    font-weight: 700;
+    background-color: transparent !important;
+}
+.social-networks.social-networks-with-name.social-networks-lg ul li a i span,
+.social-networks.social-networks-with-name.social-networks-xl ul li a i span {
+    font-weight: 600;
+}
+
+/* Hover
+----------------------------------------------------------------------------- */
+.social-networks ul li:hover a i,
+.social-networks.social-networks-layout-transparent ul li:hover a i {
+    color: #ffffff;
+    background-color: #4672d8;
+}
+.social-networks ul li:hover a i:nth-last-child(2) { margin-top: -42px; }
+.social-networks.social-networks-xs ul li:hover a i:nth-last-child(2) { margin-top: -30px; }
+.social-networks.social-networks-sm ul li:hover a i:nth-last-child(2) { margin-top: -36px; }
+.social-networks.social-networks-lg ul li:hover a i:nth-last-child(2) { margin-top: -48px; }
+.social-networks.social-networks-xl ul li:hover a i:nth-last-child(2) { margin-top: -54px; }
+
+ /* Layout
+----------------------------------------------------------------------------- */
+.social-networks.social-networks-layout-1 ul li:hover a * {
+    color: #ffffff;
+}
+
+.social-networks.social-networks-layout-2 ul li a:first-child * {
+    color: #ffffff;
+    background-color: #4672d8;
+}
+
+.social-networks.social-networks-layout-2.social-networks-with-name ul li a i::before,
+.social-networks.social-networks-layout-2.social-networks-with-name ul li a i span {
+    z-index: 2;
+    position: relative;
+}
+.social-networks.social-networks-layout-2.social-networks-with-name ul li a i::after {
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    z-index: 1;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.15);
+
+    -webkit-transition: all 0.30s ease-in-out;
+            transition: all 0.30s ease-in-out;
+}
+.social-networks.social-networks-layout-2.social-networks-with-name ul li a:hover i::after {
+    opacity: 1;
+}
+
+
+/* Layout 1
+============================================================================= */
+.social-networks-layout-1 ul li:hover a i.fa-facebook,
+.social-networks-layout-1 ul li:hover a i.fa-facebook-f,
+.social-networks-layout-1 ul li:hover a i.fa-facebook-square,
+.social-networks-layout-1 ul li:hover a i.fa-facebook-official,
+.social-networks-layout-1 ul li:hover a i.icon-facebook-f { background-color: #3d5e99 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-behance,
+.social-networks-layout-1 ul li:hover a i.fa-behance-square { background-color: #1769ff !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-btc,
+.social-networks-layout-1 ul li:hover a i.fa-bitcoin { background-color: #f7931a !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-dribbble { background-color: #ea4c89 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-flickr { background-color: #ff0084 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-git,
+.social-networks-layout-1 ul li:hover a i.fa-github,
+.social-networks-layout-1 ul li:hover a i.fa-github-alt,
+.social-networks-layout-1 ul li:hover a i.fa-git-square,
+.social-networks-layout-1 ul li:hover a i.fa-github-square { background-color: #333333 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-google,
+.social-networks-layout-1 ul li:hover a i.fa-google-plus,
+.social-networks-layout-1 ul li:hover a i.fa-google-wallet,
+.social-networks-layout-1 ul li:hover a i.fa-google-plus-circle,
+.social-networks-layout-1 ul li:hover a i.fa-google-plus-square,
+.social-networks-layout-1 ul li:hover a i.fa-google-plus-official { background-color: #d73d32 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-html5 { background-color: #e34c26 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-jsfiddle { background-color: #4679bd !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-linkedin,
+.social-networks-layout-1 ul li:hover a i.fa-linkedin-in,
+.social-networks-layout-1 ul li:hover a i.fa-linkedin-square,
+.social-networks-layout-1 ul li:hover a i.icon-linkedin-in { background-color: #007bb6 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-meanpath { background-color: #2e2e2e !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-paypal,
+.social-networks-layout-1 ul li:hover a i.fa-cc-paypal { background-color: #0079ad !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-pinterest,
+.social-networks-layout-1 ul li:hover a i.fa-pinterest-p,
+.social-networks-layout-1 ul li:hover a i.fa-pinterest-square,
+.social-networks-layout-1 ul li:hover a i.icon-pinterest-p { background-color: #e3262e !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-ra,
+.social-networks-layout-1 ul li:hover a i.fa-rebel,
+.social-networks-layout-1 ul li:hover a i.fa-resistance { background-color: #ee762a !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-sellsy { background-color: #4386d4 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-simplybuilt { background-color: #0098FF !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-rss { background-color: #f6a832 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-slideshare { background-color: #0077b5 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-stumbleupon,
+.social-networks-layout-1 ul li:hover a i.fa-stumbleupon-circle { background-color: #eb4924 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-windows { background-color: #00bcf2 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-yahoo { background-color: #2d1152 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-android { background-color: #8bc349 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-codepen { background-color: #222222 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-delicious { background-color: #0b79e5 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-dropbox { background-color: #2895f1 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-forumbee { background-color: #83ad13 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-instagram { background-color: #3f729b !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-lastfm,
+.social-networks-layout-1 ul li:hover a i.fa-lastfm-square { background-color: #e31b23 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-medium { background-color: #333332 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-reddit,
+.social-networks-layout-1 ul li:hover a i.fa-reddit-alien,
+.social-networks-layout-1 ul li:hover a i.fa-reddit-square,
+.social-networks-layout-1 ul li:hover a i.icon-reddit-alien { background-color: #e75018 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-skyatlas { background-color: #00adbb !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-soundcloud { background-color: #ff5500 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-steam,
+.social-networks-layout-1 ul li:hover a i.fa-steam-square { background-color: #404040 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-tencent-weibo {background-color: #73cff1 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-twitch { background-color: #6441a5 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-vimeo,
+.social-networks-layout-1 ul li:hover a i.fa-vimeo-square { background-color: #44bbff !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-weibo { background-color: #eb7350 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-wordpress { background-color: #1e8cbe !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-yelp { background-color: #af0606 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-angellist { background-color: #000000 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-bitbucket,
+.social-networks-layout-1 ul li:hover a i.fa-bitbucket-square { background-color: #205081 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-buysellads { background-color: #c90100 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-connectdevelop {background-color:#391448 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-deviantart { background-color: #3d4f42 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-drupal { background-color: #5bc3ff !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-foursquare { background-color: #f44877 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-gratipay { background-color: #663300 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-ioxhost { background-color: #f76800 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-linux { background-color: #e37407 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-openid { background-color: #f78c40 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-qq { background-color: #e8261f !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-skype { background-color: #00aff0 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-spotify { background-color: #84bd00 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-trello { background-color: #0078bd !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-twitter,
+.social-networks-layout-1 ul li:hover a i.fa-twitter-square,
+.social-networks-layout-1 ul li:hover a i.icon-twitter { background-color: #55acee !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-vine { background-color: #00bf8f !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-weixin { background-color: #e70012 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-xing,
+.social-networks-layout-1 ul li:hover a i.fa-xing-square { background-color: #026466 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-youtube,
+.social-networks-layout-1 ul li:hover a i.fa-youtube-play,
+.social-networks-layout-1 ul li:hover a i.fa-youtube-square { background-color: #cc181e !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-apple { background-color: #444444 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-css3 { background-color: #5eb7cb !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-digg { background-color: #222222 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-yc,
+.social-networks-layout-1 ul li:hover a i.fa-yc-square,
+.social-networks-layout-1 ul li:hover a i.fa-hacker-news,
+.social-networks-layout-1 ul li:hover a i.fa-y-combinator,
+.social-networks-layout-1 ul li:hover a i.fa-y-combinator-square { background-color: #ff6600 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-joomla { background-color: #3d72a1 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-leanpub { background-color: #323232 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-maxcdn { background-color: #ff5b02 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-pagelines { background-color: #000000 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-reneren { background-color: #227dc5 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-shirtsinbulk { background-color: #dd3a26 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-stack-exchange,
+.social-networks-layout-1 ul li:hover a i.fa-stack-overflow { background-color: #fe7a15 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-tumblr,
+.social-networks-layout-1 ul li:hover a i.fa-tumblr-square,
+.social-networks-layout-1 ul li:hover a i.icon-tumblr { background-color: #36465d !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-vk,
+.social-networks-layout-1 ul li:hover a i.icon-vk { background-color: #6383a8 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-whatsapp { background-color: #64d448 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-500px { background-color: #0099e5 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-adn { background-color: #bc0000 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-amazon { background-color: #f3a847 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-black-tie { background-color: #000000 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-cc-amex { background-color: #006699 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-cc-diners-club { background-color: #002554 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-cc-discover { background-color: #ff6000 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-cc-stripe { background-color: #6772e5 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-cc-visa { background-color: #1a1f71 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-cc-mastercard { background-color: #e35205 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-cc-jcb { background-color: #fcb026 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-chrome { background-color: #00933B !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-codiepie { background-color: #000000 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-fa,
+.social-networks-layout-1 ul li:hover a i.fa-font-awesome,
+.social-networks-layout-1 ul li:hover a i.fa-fort-awesome { background-color: #1b926c !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-get-pocket,
+.social-networks-layout-1 ul li:hover a i.icon-get-pocket { background-color: #d13644 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-fonticons { background-color: #3498db !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-expeditedssl { background-color: #25272b !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-envira { background-color: #539026 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-edge { background-color: #0078d7 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-contao { background-color: #f47c00 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-dashcube { background-color: #7f7f7f !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-bluetooth,
+.social-networks-layout-1 ul li:hover a i.fa-bluetooth-b { background-color: #0082fc !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-firefox { background-color: #c13832 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-first-order { background-color: #000000 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-ge,
+.social-networks-layout-1 ul li:hover a i.fa-empire { background-color: #ffcc00 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-gg,
+.social-networks-layout-1 ul li:hover a i.fa-gg-circle { background-color: #000000 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-gitlab { background-color: #e14329 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-houzz { background-color: #3d8901 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-glide,
+.social-networks-layout-1 ul li:hover a i.fa-glide-g { background-color: #00baff !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-gittip { background-color: #663300 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-internet-explorer { background-color: #00bbf1 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-mixcloud { background-color: #589fc3 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-modx { background-color: #67a749 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-odnoklassniki,
+.social-networks-layout-1 ul li:hover a i.fa-odnoklassniki-square { background-color: #f2720c !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-opencart { background-color: #23a1d1 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-pied-piper,
+.social-networks-layout-1 ul li:hover a i.fa-pied-piper-pp,
+.social-networks-layout-1 ul li:hover a i.fa-pied-piper-alt { background-color: #608c28 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-optin-monster { background-color: #83c11f !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-opera { background-color: #cc0f16 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-product-hunt { background-color: #00b27f !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-renren { background-color: #227dc5 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-scribd { background-color: #1a7bba !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-share-alt,
+.social-networks-layout-1 ul li:hover a i.fa-share-alt-square { background-color: #000000 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-snapchat,
+.social-networks-layout-1 ul li:hover a i.fa-snapchat-ghost,
+.social-networks-layout-1 ul li:hover a i.fa-snapchat-square { background-color: #fffc00 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-slack { background-color: #e01563 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-safari { background-color: #00338d !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-tripadvisor { background-color: #589442 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-usb { background-color: #000000 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-viadeo,
+.social-networks-layout-1 ul li:hover a i.fa-viadeo-square { background-color: #f07355 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-wechat { background-color: #7bb32e !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-viacoin { background-color: #333333 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-themeisle { background-color: #189ac4 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-wpbeginner { background-color: #ea6a1b !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-wpforms { background-color: #e27730 !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-yoast { background-color: #a4286a !important; color: #ffffff !important; }
+.social-networks-layout-1 ul li:hover a i.fa-wikipedia-w { background-color: #6b6b6b !important; color: #ffffff !important; }
+
+
+/* Layout 2
+============================================================================= */
+.social-networks-layout-2 ul li a i.fa-facebook,
+.social-networks-layout-2 ul li a i.fa-facebook-f,
+.social-networks-layout-2 ul li a i.fa-facebook-square,
+.social-networks-layout-2 ul li a i.fa-facebook-official,
+.social-networks-layout-2 ul li a i.icon-facebook-f { background-color: #3d5e99 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-behance,
+.social-networks-layout-2 ul li a i.fa-behance-square { background-color: #1769ff !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-btc,
+.social-networks-layout-2 ul li a i.fa-bitcoin { background-color: #f7931a !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-dribbble { background-color: #ea4c89 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-flickr { background-color: #ff0084 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-git,
+.social-networks-layout-2 ul li a i.fa-github,
+.social-networks-layout-2 ul li a i.fa-github-alt,
+.social-networks-layout-2 ul li a i.fa-git-square,
+.social-networks-layout-2 ul li a i.fa-github-square { background-color: #333333 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-google,
+.social-networks-layout-2 ul li a i.fa-google-plus,
+.social-networks-layout-2 ul li a i.fa-google-wallet,
+.social-networks-layout-2 ul li a i.fa-google-plus-circle,
+.social-networks-layout-2 ul li a i.fa-google-plus-square,
+.social-networks-layout-2 ul li a i.fa-google-plus-official { background-color: #d73d32 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-html5 { background-color: #e34c26 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-jsfiddle { background-color: #4679bd !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-linkedin,
+.social-networks-layout-2 ul li a i.fa-linkedin-in,
+.social-networks-layout-2 ul li a i.fa-linkedin-square,
+.social-networks-layout-2 ul li a i.icon-linkedin-in { background-color: #007bb6 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-meanpath { background-color: #2e2e2e !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-paypal,
+.social-networks-layout-2 ul li a i.fa-cc-paypal { background-color: #0079ad !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-pinterest,
+.social-networks-layout-2 ul li a i.fa-pinterest-p,
+.social-networks-layout-2 ul li a i.fa-pinterest-square,
+.social-networks-layout-2 ul li a i.icon-pinterest-p { background-color: #e3262e !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-ra,
+.social-networks-layout-2 ul li a i.fa-rebel,
+.social-networks-layout-2 ul li a i.fa-resistance { background-color: #ee762a !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-sellsy { background-color: #4386d4 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-simplybuilt { background-color: #0098FF !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-rss { background-color: #f6a832 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-slideshare { background-color: #0077b5 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-stumbleupon,
+.social-networks-layout-2 ul li a i.fa-stumbleupon-circle { background-color: #eb4924 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-windows { background-color: #00bcf2 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-yahoo { background-color: #2d1152 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-android { background-color: #8bc349 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-codepen { background-color: #222222 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-delicious { background-color: #0b79e5 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-dropbox { background-color: #2895f1 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-forumbee { background-color: #83ad13 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-instagram { background-color: #3f729b !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-lastfm,
+.social-networks-layout-2 ul li a i.fa-lastfm-square { background-color: #e31b23 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-medium { background-color: #333332 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-reddit,
+.social-networks-layout-2 ul li a i.fa-reddit-alien,
+.social-networks-layout-2 ul li a i.fa-reddit-square,
+.social-networks-layout-2 ul li a i.icon-reddit-alien { background-color: #e75018 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-skyatlas { background-color: #00adbb !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-soundcloud { background-color: #ff5500 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-steam,
+.social-networks-layout-2 ul li a i.fa-steam-square { background-color: #404040 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-tencent-weibo {background-color: #73cff1 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-twitch { background-color: #6441a5 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-vimeo,
+.social-networks-layout-2 ul li a i.fa-vimeo-square { background-color: #44bbff !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-weibo { background-color: #eb7350 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-wordpress { background-color: #1e8cbe !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-yelp { background-color: #af0606 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-angellist { background-color: #000000 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-bitbucket,
+.social-networks-layout-2 ul li a i.fa-bitbucket-square { background-color: #205081 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-buysellads { background-color: #c90100 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-connectdevelop {background-color:#391448 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-deviantart { background-color: #3d4f42 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-drupal { background-color: #5bc3ff !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-foursquare { background-color: #f44877 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-gratipay { background-color: #663300 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-ioxhost { background-color: #f76800 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-linux { background-color: #e37407 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-openid { background-color: #f78c40 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-qq { background-color: #e8261f !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-skype { background-color: #00aff0 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-spotify { background-color: #84bd00 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-trello { background-color: #0078bd !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-twitter,
+.social-networks-layout-2 ul li a i.fa-twitter-square,
+.social-networks-layout-2 ul li a i.icon-twitter { background-color: #55acee !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-vine { background-color: #00bf8f !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-weixin { background-color: #e70012 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-xing,
+.social-networks-layout-2 ul li a i.fa-xing-square { background-color: #026466 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-youtube,
+.social-networks-layout-2 ul li a i.fa-youtube-play,
+.social-networks-layout-2 ul li a i.fa-youtube-square { background-color: #cc181e !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-apple { background-color: #444444 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-css3 { background-color: #5eb7cb !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-digg { background-color: #222222 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-yc,
+.social-networks-layout-2 ul li a i.fa-yc-square,
+.social-networks-layout-2 ul li a i.fa-hacker-news,
+.social-networks-layout-2 ul li a i.fa-y-combinator,
+.social-networks-layout-2 ul li a i.fa-y-combinator-square { background-color: #ff6600 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-joomla { background-color: #3d72a1 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-leanpub { background-color: #323232 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-maxcdn { background-color: #ff5b02 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-pagelines { background-color: #000000 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-reneren { background-color: #227dc5 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-shirtsinbulk { background-color: #dd3a26 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-stack-exchange,
+.social-networks-layout-2 ul li a i.fa-stack-overflow { background-color: #fe7a15 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-tumblr,
+.social-networks-layout-2 ul li a i.fa-tumblr-square,
+.social-networks-layout-2 ul li a i.icon-tumblr { background-color: #36465d !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-vk,
+.social-networks-layout-2 ul li a i.icon-vk { background-color: #6383a8 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-whatsapp { background-color: #64d448 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-500px { background-color: #0099e5 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-adn { background-color: #bc0000 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-amazon { background-color: #f3a847 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-black-tie { background-color: #000000 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-cc-amex { background-color: #006699 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-cc-diners-club { background-color: #002554 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-cc-discover { background-color: #ff6000 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-cc-stripe { background-color: #6772e5 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-cc-visa { background-color: #1a1f71 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-cc-mastercard { background-color: #e35205 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-cc-jcb { background-color: #fcb026 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-chrome { background-color: #00933B !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-codiepie { background-color: #000000 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-fa,
+.social-networks-layout-2 ul li a i.fa-font-awesome,
+.social-networks-layout-2 ul li a i.fa-fort-awesome { background-color: #1b926c !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-get-pocket,
+.social-networks-layout-2 ul li a i.icon-get-pocket { background-color: #d13644 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-fonticons { background-color: #3498db !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-expeditedssl { background-color: #25272b !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-envira { background-color: #539026 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-edge { background-color: #0078d7 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-contao { background-color: #f47c00 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-dashcube { background-color: #7f7f7f !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-bluetooth,
+.social-networks-layout-2 ul li a i.fa-bluetooth-b { background-color: #0082fc !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-firefox { background-color: #c13832 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-first-order { background-color: #000000 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-ge,
+.social-networks-layout-2 ul li a i.fa-empire { background-color: #ffcc00 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-gg,
+.social-networks-layout-2 ul li a i.fa-gg-circle { background-color: #000000 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-gitlab { background-color: #e14329 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-houzz { background-color: #3d8901 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-glide,
+.social-networks-layout-2 ul li a i.fa-glide-g { background-color: #00baff !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-gittip { background-color: #663300 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-internet-explorer { background-color: #00bbf1 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-mixcloud { background-color: #589fc3 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-modx { background-color: #67a749 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-odnoklassniki,
+.social-networks-layout-2 ul li a i.fa-odnoklassniki-square { background-color: #f2720c !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-opencart { background-color: #23a1d1 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-pied-piper,
+.social-networks-layout-2 ul li a i.fa-pied-piper-pp,
+.social-networks-layout-2 ul li a i.fa-pied-piper-alt { background-color: #608c28 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-optin-monster { background-color: #83c11f !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-opera { background-color: #cc0f16 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-product-hunt { background-color: #00b27f !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-renren { background-color: #227dc5 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-scribd { background-color: #1a7bba !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-share-alt,
+.social-networks-layout-2 ul li a i.fa-share-alt-square { background-color: #000000 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-snapchat,
+.social-networks-layout-2 ul li a i.fa-snapchat-ghost,
+.social-networks-layout-2 ul li a i.fa-snapchat-square { background-color: #fffc00 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-slack { background-color: #e01563 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-safari { background-color: #00338d !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-tripadvisor { background-color: #589442 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-usb { background-color: #000000 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-viadeo,
+.social-networks-layout-2 ul li a i.fa-viadeo-square { background-color: #f07355 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-wechat { background-color: #7bb32e !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-viacoin { background-color: #333333 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-themeisle { background-color: #189ac4 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-wpbeginner { background-color: #ea6a1b !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-wpforms { background-color: #e27730 !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-yoast { background-color: #a4286a !important; color: #ffffff !important; }
+.social-networks-layout-2 ul li a i.fa-wikipedia-w { background-color: #6b6b6b !important; color: #ffffff !important; }
