@@ -1,4 +1,4 @@
-Olive Tree Remodel - Application in development being built for a business in Washington State.
+Olive Tree Remodel - Application currently in development being built for a business in Washington State.
 
 Python / Flask - Mobile Friendly Responsive Application
 
